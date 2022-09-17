@@ -1,30 +1,28 @@
 body {
+  text-align: center;
+  overflow: hidden;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
   font-size: max(2vh, 2vw);
   line-height: 1.5;
   color: #333;
-  font-family: Arial, sans-serif;
-  animation: bg 8s ease-out infinite; overflow: hidden;
+  animation: bg 8s ease-out infinite;
 }
 h1 {
 	margin: 50px 0 10px;
 	padding: 0;
 	font-size: inherit;
-	text-align: center;
 }
 p {
   margin: 0;
   padding: 0 0 30px;
   font-size: inherit;
   font-family: inherit;
-  text-align: center;
   border-bottom: 2px solid rgba(207, 190, 2, 0.6);
 }
 main {
-  max-width: 900px;
-  margin: auto;
-  padding: 5px;
+  display: inline-block;
 }
 .circle {
   position: absolute;
@@ -53,11 +51,11 @@ main {
   background: rgba(199,93,56,.5);
   animation: circle 8s ease-out infinite;
 }
-@keyframes circle{
+@keyframes circle {
   0% { opacity:1; transform:scale(0.2)}
   to { opacity:0; transform:scale(1.8)}
 }
-@keyframes bg{
+@keyframes bg {
   0% { background: rgba(207, 190, 2, 0.1);}
   15% { background: rgba(207, 190, 2, 0.3);}
   35% { background: rgba(207, 190, 2, 0.6);}
@@ -65,4 +63,3 @@ main {
   85% { background: rgba(207, 190, 2, 0.3);}
   100% { background: rgba(207, 190, 2, 0.1);}
 }
-
